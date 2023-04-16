@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hat Shop - Cadastro.</title>
+
+    <link rel="stylesheet" href="normalize/bootstrap.min.css " />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="block.css" />
+    <link rel="stylesheet" href="element.css" />
+  </head>
+  <body>
+    <header class="block-header block-header--fixed">
+      <div class="container">
+        <div class="block-header__logomarca">
+          <a href="index.html">
+            <img
+              src="imagens/logo.png"
+              width="99"
+              height="68"
+              alt="logomarca"
+            />
+          </a>
+        </div>
+
+        <div class="block-header__menu">
+          <button class="bar-button js-bar-button"></button>
+
+          <ul class="header-menu js-menu">
+            <a href="index.html ">
+              <li class="header-menu__item">Home</li>
+            </a>
+
+            <a href="sobre.html">
+              <li class="header-menu__item">Sobre</li>
+            </a>
+
+            <a href="contato.html">
+              <li class="header-menu__item">Contatos</li>
+            </a>
+
+            <a href="" class="header-menu__item--button">
+              <li class="header-menu__item">
+                Restrito
+
+                <ul class="header-submenu">
+                  <a href="login.html">
+                    <li class="header-submenu__item">Login</li>
+                  </a>
+                  <a href="cadastro.html">
+                    <li class="header-submenu__item">Cadastro</li>
+                  </a>
+                </ul>
+              </li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="block-header__description">Hat shoop.</div>
+      </div>
+    </header>
+
+    <main class="block-form">
+      <div class="container">
+        <h1 class="form__titulo">Cadastro</h1>
+        <h3 class="form__subtitulo">
+          Cadastra-se grátis e ganhe 50% de desconto na primeira compra
+        </h3>
+
+        <form action="#" method="post"></form>
+
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            name="nome"
+            class="form-control"
+            id="nome"
+            required="required"
+          />
+        </div>
+
+        <div class="row">
+          <div class="form-group col-xs-12 col-sm-6">
+            <label for="cpf">CPF</label>
+            <input
+              type="text"
+              name="cpf"
+              class="form-control"
+              id="cpf"
+              maxlength="14"
+              pattern="\d{3}.\d{3}.\d{3}-\d{2}"
+            />
+          </div>
+
+          <div class="form-group col-xs-12 col-sm-6">
+            <label for="data-nascimento">Data de nascimento</label>
+            <input
+              type="date"
+              name="data-nascimento"
+              class="form-control"
+              id="data-nascimento"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            id="email"
+            required="required"
+          />
+        </div>
+
+        <div class="row">
+          <div class="form-group col-xs-12 col-sm-6">
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado" class="form-control">
+              <option value="SP">São Paulo</option>
+
+              <option value="PB">Paraíba</option>
+
+              <option value="PE">Pernambuco</option>
+
+              <option value="RJ">Rio de Janeiro</option>
+
+              <option value="RS">Rio Grande do Sul</option>
+            </select>
+          </div>
+
+          <div class="form-group col-xs-12 col-sm-6">
+            <label for="cidade">Cidade</label>
+            <input
+              type="text"
+              name="cidade"
+              class="form-control"
+              id="cidade"
+              required="required"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-xs-12 col-sm-6">
+            <label for="senha">Senha</label>
+            <input
+              type="password"
+              name="senha"
+              class="form-control"
+              id="senha"
+              required="required"
+            />
+          </div>
+
+          <div class="form-group col-xs-12 col-sm-6">
+            <label for="senha-confirmação">Confirmação de Senha</label>
+            <input
+              type="password"
+              name="senha-confirmação"
+              class="form-control"
+              id="senha-confirmação"
+              required="required"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button type="reset" class="form_clear">Limpar</button>
+          <button type="submit" class="form_process">Cadastrar</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="block-footer">
+      <div class="container">
+        <p>&copy; Copyrigth. Hat Shop. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script-controller.js"></script>
+  </body>
+</html>
